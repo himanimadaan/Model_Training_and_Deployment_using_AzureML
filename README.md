@@ -39,7 +39,8 @@ The task is to predict whether the employee will leave the current job or not, b
 ### Accessing the Data
 The data can be accessed by downloading the data into local server and then uploading it to Dataset subsection of Microsoft AzureML.
 
-//////////////////////////////////////////////dataaa
+![dataset](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/data.png)
+
 
 ## Automated ML
 
@@ -57,11 +58,11 @@ AutoML Configuration used for this project:
 After comparing 37 algorithms, the Best model obtained is Voting Ensemble with an Accuracy of 80.17%
 
 The screenshot of the details of various algorithms is shown below:
-//////////////////////////////////////////////////////////////1.aml
+![AML-algorithms](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/1.AML-algorithms.png)
 
 Best Run model-ID and accuracy, along with other parameters:
-///////////////////////////////////////////////////////////////2.aml
-//////////////////////////////////////////////////////////////////////////3.aml
+![AML-bestRunAccuracy](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/2.AML-best-run-id%2C%20accuracy.png)
+![AML-bestRunAccuracy](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/3.aml-automlrun.png)
 
 
 The model can be imporved by increasing the number of iterations or trying for various cross-validation folds.
@@ -76,10 +77,10 @@ The two parameters: '--C' (Inverse of regularization strength. Smaller values ca
 
 ### Results
 Here's the screenshot of best results and optimized parameters obtained using HyperDrive:
-/////////////////////////////1.hdrun
+![HD-run-parameters](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/1.hd-run-parameters.png)
 Rundetails Widget:
-/////////2.hdrundetails
-///////////////////////////////////////3.hdrundetails
+![HD-run-details](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/2.hd-rundetails.png)
+![HD-run-details](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/3.hr-rundetails.png)
 
 
 ## Model Deployment
@@ -90,15 +91,15 @@ The details for method of deployment can be found in automl.ipynb under Model De
 The number of cpu cores and memory for the web service has been set to 1 and 1GB respectively.
 
 We can see the deployment state set as healthy below, stating that model has deployed successfully. This model can now be consumed using REST Api by sending HTTP requests to it.
-/////////////////////////1.deployment
-/////////////////////////////////////2.deployment
+![Deployment1](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/1.deployment.png)
+![Deployment2](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/2.deployment.png)
 
-y.Now we can consume the endpoint using scoring URL genereated after deployment.
+Now we can consume the endpoint using scoring URL genereated after deployment.
 The sample input to the endpoint is as below. This can also be found in endpoint.py file of the repository.
-//////////////////////////////////////////////////////////////endpoint
+![endpoint-raw-data](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/endpoint.png)
 
 ### Result
-///////////////finalres
+![final-res-from-endpoint](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/finalres.png)
 
 ## Screen Recording
 Here's a link of Screencast demonstrating the consuming of the Deployed model: https://1drv.ms/u/s!Avt8pJRrCCqEhmNaZOPPxJfcpQlh?e=8Y7BYf
