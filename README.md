@@ -5,6 +5,8 @@ This project is designed to predict whether an employee will leave the current j
 2. Using Logistic Regression and tuning the parameters using HyperDrive.
 The best model will then be deployed using Azure Container Instance which can later be consumed using REST Api.
 
+![Flow diagram of project](https://github.com/himanimadaan/nd00333-capstone/blob/master/Screenshots/architecture.png)
+
 ## Project Set Up and Installation
 The project requires access to AzureML Studio.
 
